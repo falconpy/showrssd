@@ -8,4 +8,5 @@ All the settings are in settings.py file:
 - A download directory where utorrent/transmission can get the torrent files
 - Enable disc space alert log file and email notifications
 - In the last case, can be setted the email account to send the emails and set the destinators
-- 
+
+this software can be used with cron to automatize the downloading of tv shows.
