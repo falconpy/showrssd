@@ -39,14 +39,14 @@ for i in range(0,n_entries):
 
 
 if all_downloaded == True:
-	info = info_time + ' Todo descargado'
+	info = info_time + ' All downloaded'
 else:
-	info = info_time + ' Nuevos torrents!!!' + info_torrent
-	info_email = info_torrent + '\n\nEspacio en Disco: %.2f' % disk_space(dir_down) + 'GB'
+	info = info_time + ' New torrents!!!' + info_torrent
+	info_email = info_torrent + '\n\nDisc Space: %.2f' % disk_space(dir_down) + 'GB'
 
 if (disk_space(dir_down) <= Settings.space_alert):
-	print 'Hay poco espacio en disco!: %.2f' % disk_space(dir_down) + 'GB'
-	info_email = info_email + '\nHay poco espacio disponible!!!' 
+	print 'Low Disc Space!: %.2f' % disk_space(dir_down) + 'GB'
+	info_email = info_email + '\nLow Disc Space!!!!' 
 	
 print info
 
@@ -57,7 +57,7 @@ if email == True and all_downloaded == False:
 	email_dst = Settings.email_dst
 	for send_to in email_dst:
 		print send_to	
-		gmail.send_mail(email_user, email_pwd, send_to, 'Rpi: nuevos episodios!!!', info_email)
+		gmail.send_mail(email_user, email_pwd, send_to, 'Rpi: new shows!!!', info_email)
 	
 if log == True:
 	log_file = path + '/showrssd.log'
