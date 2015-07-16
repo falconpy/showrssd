@@ -6,4 +6,4 @@ class Settings(object):
     email_enabled = True
     email_user = 'sender_email@gmail.com'
     email_pwd = 'sender_email_pass'
-    email_dst = {'email1@gmail.com','email2@hotmail.com'}
+    email_dst = {'email_dst_1@gmail.com','email_dst_2@hotmail.com'}
