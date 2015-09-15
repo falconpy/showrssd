@@ -10,3 +10,4 @@ All the settings are in settings.py file:
 - In the last case, can be setted the email account to send the emails and set the destinators
 
 This software can be used with cron to automatize the downloading of tv shows.
+This software is capable to diggest other RSS feeds.
