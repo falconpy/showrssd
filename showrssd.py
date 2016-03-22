@@ -24,7 +24,7 @@ SRurl = Settings.showrssURL
 log = Settings.log_enabled
 email = Settings.email_enabled
 
-rss = feedparser.parse(SRurl + '&magnets=false')
+rss = feedparser.parse(SRurl)
 n_entries=len(rss['entries'])
 all_downloaded = True
 
