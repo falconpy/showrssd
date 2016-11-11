@@ -1,7 +1,7 @@
 # showrssd
 Showrss.info downloader
 
-It only need universal feed parser library: feedparser.py (https://pypi.python.org/pypi/feedparser). I tested 5.1.3 version. 
+It only needs universal the feed parser library feedparser.py (https://pypi.python.org/pypi/feedparser). I tested 5.1.3 version. 
 
 All the settings are in settings.py file:
 - The showrss.info user id
