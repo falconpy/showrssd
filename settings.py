@@ -1,6 +1,7 @@
 class Settings(object):
     showrssURL = 'http://showrss.info/rss.php?user_id=XXXXXX'
     dir_download = '/home/user/downloads/watch'
+    torrent_client_cmd = 'transmission-remote -a '
     log_enabled = True
     space_alert = 2.0
     email_enabled = True
